@@ -199,7 +199,7 @@ nav ul li:hover a:after {
   width: 100%;
   background-color: hsla(0, 0%, 0%, 0.582);
   padding: 1rem;
-  border-radius: 20%;
+  border-radius: 2rem;
   overflow: hidden;
 }
 .swiper-box.swiped-left {
