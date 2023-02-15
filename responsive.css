@@ -1,0 +1,98 @@
+@media screen and (max-width: 765px) {
+  nav {
+    padding: 0.6rem 1rem;
+  }
+  nav .logo {
+    font-size: 2.5em;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul.active {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(30px);
+    padding-bottom: 1rem;
+    border-radius: 0 0 0 20px;
+    box-shadow: -15px 10px 10px hsla(0, 0%, 0%, 0.724);
+  }
+
+  nav ul.active li a::after {
+    z-index: 1;
+  }
+  nav ul.active li {
+    display: block;
+    text-align: center;
+    width: 100%;
+    transition: 400ms;
+  }
+  nav ul.active li:hover {
+    background-color: var(--dark-accent);
+  }
+  .bar {
+    display: flex;
+    cursor: pointer;
+    gap: 5px;
+    flex-direction: column;
+  }
+  .bar span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    transition: rotate 300ms ease;
+  }
+  .bar.active span:first-child {
+    rotate: 45deg;
+  }
+  .bar.active span:last-child {
+    rotate: -45deg;
+  }
+
+  /* front-desk styling  */
+
+  .front-desk {
+    grid-template-columns: 1fr;
+  }
+  .front-desk .left .text-area {
+    width: 85%;
+    margin: 2rem auto;
+  }
+  .front-desk .left .text-area h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .front-desk .left .text-area p {
+    font-size: 1.6rem;
+  }
+  .front-desk .left .text-area button {
+    margin-left: 0;
+    padding: 1rem 2rem;
+    width: 85%;
+    font-size: 1.6rem;
+  }
+  .front-desk .right .text-centre {
+    display: none;
+  }
+  .front-desk .right .swiper-container {
+    margin: 2rem auto;
+  }
+  .front-desk .right .swiper-container .swiper-box {
+    max-width: 200px;
+    height: 150px;
+    flex: none;
+  }
+  .front-desk .btn-group{
+    bottom: 1vh;
+  }
+  .front-desk .btn-group button{
+    padding: 0.2rem 1rem;
+  }
+}

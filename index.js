@@ -87,3 +87,14 @@ const frontDesk = document.querySelector(".front-desk")
 
 const header = document.querySelector("header")
 const swiper = new Swiper(swipeArea, button, header, images, textCentre, frontDesk);
+const navList=document.querySelector("nav ul")
+const bar=document.querySelector(".bar")
+class Nav {
+    constructor(menu,bar){
+        bar.addEventListener("click",(e)=>{
+            bar.classList.toggle("active")
+            menu.classList.toggle("active")
+        })
+    }
+}
+const navLink= new Nav(navList,bar)
