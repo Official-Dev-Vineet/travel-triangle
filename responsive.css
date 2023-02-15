@@ -1,9 +1,10 @@
 @media screen and (max-width: 765px) {
   nav {
-    padding: 0.6rem 1rem;
+    padding: 1rem 2rem;
   }
   nav .logo {
-    font-size: 2.5em;
+    font-size: 2em;
+    text-shadow: none;
   }
   nav ul {
     display: none;
@@ -41,6 +42,8 @@
     cursor: pointer;
     gap: 5px;
     flex-direction: column;
+    border: 1px solid;
+    padding: 1rem;
   }
   .bar span {
     display: block;
@@ -59,10 +62,13 @@
   /* front-desk styling  */
 
   .front-desk {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
   .front-desk .left .text-area {
     width: 85%;
+    height: auto;
     margin: 2rem auto;
   }
   .front-desk .left .text-area h1 {
@@ -73,16 +79,17 @@
     font-size: 1.6rem;
   }
   .front-desk .left .text-area button {
-    margin-left: 0;
-    padding: 1rem 2rem;
-    width: 85%;
+    margin: 2rem 0;
+    padding: 1rem;
+    max-width: 100px;
     font-size: 1.6rem;
   }
   .front-desk .right .text-centre {
     display: none;
   }
   .front-desk .right .swiper-container {
-    margin: 2rem auto;
+    margin: 0 2rem;
+    margin-top: 0;
   }
   .front-desk .right .swiper-container .swiper-box {
     max-width: 200px;
@@ -90,9 +97,9 @@
     flex: none;
   }
   .front-desk .btn-group{
-    bottom: 1vh;
+    bottom: 5vh;
   }
-  .front-desk .btn-group button{
+  .front-desk .btn-group button {
     padding: 0.2rem 1rem;
   }
 }

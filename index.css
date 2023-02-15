@@ -8,7 +8,7 @@
   border: none;
   outline: none;
   list-style: none;
-  transition:color 100ms ease-in;
+  transition: color 100ms ease-in;
 }
 :root {
   --dark-primary: #80558c;
@@ -50,7 +50,7 @@ body {
   box-shadow: var(--accent-shadow);
 }
 header {
-  background-size:cover;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
@@ -68,8 +68,8 @@ nav {
   z-index: 999;
 }
 nav .logo {
-  font-size: clamp(4rem, 3vw, 6rem);
-  font-family: cursive;
+  font-size: clamp(3rem, 3vw, 6rem);
+  font-family: "Pt serif", cursive;
   font-weight: 300;
   background-clip: text;
   text-shadow: 2px 2px 2px var(--accent);
@@ -113,24 +113,19 @@ nav ul li a:active {
 nav ul li:hover a:after {
   width: 100%;
 }
-.bar{
+.bar {
   display: none;
 }
 .front-desk {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   background-image: linear-gradient(
     189deg,
     transparent,
     rgba(0, 0, 0, 0.9),
     #000000ec
   );
-}
-.front-desk .left {
-  height: 100%;
-}
-.front-desk .right {
-  height: 100%;
 }
 .front-desk .left .text-area {
   display: flex;
