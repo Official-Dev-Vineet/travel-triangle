@@ -65,6 +65,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    overflow: hidden;
   }
   .front-desk .left .text-area {
     width: 85%;
@@ -90,6 +91,7 @@
   .front-desk .right .swiper-container {
     margin: 0 2rem;
     margin-top: 0;
+    flex-direction: column;
   }
   .front-desk .right .swiper-container .swiper-box {
     max-width:none;

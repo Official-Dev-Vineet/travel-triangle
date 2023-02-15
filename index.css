@@ -187,7 +187,6 @@ nav ul li:hover a:after {
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 2rem;
 }
 .swiper-box {
