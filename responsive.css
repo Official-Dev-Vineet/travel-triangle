@@ -66,6 +66,7 @@
     flex-direction: column;
     gap: 2rem;
     overflow: hidden;
+    padding-bottom: 2rem;
   }
   .front-desk .left .text-area {
     width: 85%;
@@ -94,15 +95,23 @@
     flex-direction: column;
   }
   .front-desk .right .swiper-container .swiper-box {
-    max-width:none;
+    max-width: none;
     width: 100%;
-    height:220px;
+    height: 220px;
     flex: none;
   }
-  .front-desk .btn-group{
+  .front-desk .btn-group {
     bottom: 10vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5rem;
+    padding: 0.4rem 2rem;
   }
   .front-desk .btn-group button {
     padding: 0.2rem 1rem;
+  }
+  main {
+    margin-top:10vh ;
+    display: block;
+    background-color: red;
   }
 }
