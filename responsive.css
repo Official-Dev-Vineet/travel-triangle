@@ -109,9 +109,4 @@
   .front-desk .btn-group button {
     padding: 0.2rem 1rem;
   }
-  main {
-    margin-top:10vh ;
-    display: block;
-    background-color: red;
-  }
 }
