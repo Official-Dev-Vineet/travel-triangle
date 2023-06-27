@@ -151,7 +151,6 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("keyup", (e) => {
     e.key === "ArrowRight" ? button[0].click() : "";
     e.key === "ArrowLeft" ? button[1].click() : "";
-    clearInterval(timer);
   });
   window.addEventListener("resize", () => {
     frontDesk.style.height =
@@ -159,6 +158,3 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-const timer = setInterval(() => {
-  button[1].click();
-}, 3000);
