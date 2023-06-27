@@ -77,7 +77,6 @@ class Swiper {
       image.srcset = `./images/${images[iterate - 1].src_sm} 500w, ./images/${
         images[iterate - 1].src_md
       } 1080w, ./images/${images[iterate - 1].src} 1200w`;
-      image.loading = "lazy";
       image.crossOrigin = "anonymous";
       image.sizes = `(max-width: 500px) 500px, (max-width: 1080px) 1080px, (max-width: 1200px) 1200px`;
       swiperBox.appendChild(image);
